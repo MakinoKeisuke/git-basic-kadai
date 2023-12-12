@@ -1,1 +1,43 @@
-課題
+keisu@keisuke_0629 MINGW64 ~ (main)
+$ mkdir git_challenge
+
+keisu@keisuke_0629 MINGW64 ~ (main)
+$ cd git_challenge
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$  echo "Hello, world!" >> hello_world.txt
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/keisu/git_challenge/.git/
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 3f62d80] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 4fc22f2] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$ git log --oneline
+4fc22f2 (HEAD -> main) 日本語訳を追記
+3f62d80 hello_world.txtを追加
+
+keisu@keisuke_0629 MINGW64 ~/git_challenge (main)
+$
+
